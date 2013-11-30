@@ -1,23 +1,88 @@
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
+body{
+	width: 100%;
+	background: #b70000;
+}
+
+.top-content{
+	background: url(images/food-1130.jpg) no-repeat center center;
+	background-size: cover;
+	height: 60%;
+	width: 100%;
+}
+
+#logo{
+	margin: auto 0;
+	display: inline-block;
+	position: relative;
+	height: 1.5em;
+}
 
 nav{
 	width: 100%;
 	background: rgba(0, 0, 0, .2);
-	height: 3em;
-}
-#logo{
-	margin: 1em;
-	position: absolute;
-
-}
-nav ul{
-	float: right;
-}
-
-nav li{
-	float: left;
-	margin: .5em;
+	height: 15%;
 	position: relative;
 }
+
+	nav ul{
+		float: right;
+	}
+
+	nav li{
+		float: left;
+		margin: 0 1em;
+	}
+
+	.nav-item{
+		text-decoration: none;
+		font-size: 1.25em;
+		color: #a7a4a4;
+		width: 3.75em;
+		margin: auto 0;
+		font-family: 'Anton', Arial, sans-serif;
+	}
+
+
+#site-content-container{
+	height: 30%;
+	margin: 1em auto;
+	width: 60em;
+}
+
+	.Welcome-text{
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 1.25em;
+		clear: right;
+	}
+
+	.site-info{
+		float: left;
+		margin: 1em .5em .5em 0;
+		width: 32.5%;
+		position: relative;
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: .75em;
+		line-height: 1.25em;
+	}
+
+#footer-container{
+	clear: both;
+	height: 10%;
+	bottom: 0;
+	width: 9.75em;
+	margin: 0 auto;
+}
+
+	footer{
+		font-size: .75em;
+		position: fixed;
+		font-family: 'Roboto', Arial, sans-serif;	
+	}
+
+	.super{
+		vertical-align: top;
+		font-size: .5em;
+	}
