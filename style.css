@@ -6,6 +6,8 @@ body{
 	background: #b70000;
 }
 
+/*Nav*/
+
 .top-content{
 	background: url(images/food-1130.jpg) no-repeat center center;
 	background-size: cover;
@@ -13,38 +15,78 @@ body{
 	width: 100%;
 }
 
-#logo{
-	margin: auto 0;
+#logo-home{
+	content: url(images/spoon.jpg);
+	margin: 1em 0 0 1em;
 	display: inline-block;
 	position: relative;
 	height: 1.5em;
 }
 
-nav{
+#logo{
+	content: url(images/spoon.jpg);
+	margin-left: 1em;
+	bottom: -25%;
+	position: inherit;
+	height: 65%;
+}
+
+.trans-back{
 	width: 100%;
 	background: rgba(0, 0, 0, .2);
 	height: 15%;
 	position: relative;
 }
 
+.solid-back{
+	width: 100%;
+	background: rgb(0, 0, 0);
+	height: 25%;
+	position: relative;
+}
+
 	nav ul{
 		float: right;
+		/*height: 100%;*/
 	}
 
 	nav li{
 		float: left;
-		margin: 0 1em;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+		.vertical-center{
+			margin-top: 7.25%;
+			margin-bottom: 7.25%;
+		}
+
+	.bottom-align{
+		bottom: -15%;
+		position: inherit;
 	}
 
 	.nav-item{
 		text-decoration: none;
 		font-size: 1.25em;
 		color: #a7a4a4;
-		width: 3.75em;
-		margin: auto 0;
 		font-family: 'Anton', Arial, sans-serif;
 	}
 
+	.nav-item:hover{
+		color: white;
+	}
+
+		.active-circle{
+		   width: .5em;
+		   height: .5em;
+		   border-radius: 50%;
+		   background: #a7a4a4;
+		   float: left;
+		   margin: .375em .25em;
+		}
+
+/*Home Page*/
 
 #site-content-container{
 	height: 30%;
@@ -86,3 +128,64 @@ nav{
 		vertical-align: top;
 		font-size: .5em;
 	}
+
+/*Contact Page*/
+
+.clear-right{
+	clear: right;
+}
+
+.margin-top-bottom{
+	margin: .5em 0;
+}
+
+/*Recipe Page*/
+
+#recipe-container{
+	height: 75%;
+	margin: 1em auto;
+	width: 60em;
+}
+
+	.recipe{
+		float: left;
+		margin: 1em .25em;
+		width: 32.5%;
+		position: relative;
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: .75em;
+		line-height: 1.25em;
+	}
+		
+		.recipe-img{
+			width: 25em;
+			height: auto;
+			margin-bottom: .5em;
+			clear: both;
+			display: block;
+			position: relative;
+		}
+
+		.recipe-title{
+			float: left;
+			font-size: 1.5em;
+			text-decoration: underline;
+		}
+			.recipe-title:hover{
+				cursor: pointer;
+				cursor: hand;
+			}
+
+		.week{
+			float: left;
+			clear: both;
+			font-size: .875em;
+			margin-top: .5em;
+			
+		}
+			.cal-icon{
+				content:url(images/calendar-icon.png);
+				margin: auto .5em auto 0;
+				display: inline;
+				vertical-align: middle;
+			}
