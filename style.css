@@ -1,7 +1,14 @@
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
+body{
+	width: 100%;
+	background: #b70000;
+}
 
+/*Nav*/
+
+<<<<<<< HEAD
 body{
 	height: 100%;
 	background: #e12a2a;
@@ -22,12 +29,32 @@ nav{
 	height: 5%;
 	margin: auto 1em;
 	position: absolute;
-
+=======
+.top-content{
+	background: url(images/food-1130.jpg) no-repeat center center;
+	background-size: cover;
+	height: 60%;
+	width: 100%;
 }
-nav ul{
-	float: right;
+>>>>>>> master
+
+#logo-home{
+	content: url(images/spoon.jpg);
+	margin: 1em 0 0 1em;
+	display: inline-block;
+	position: relative;
+	height: 1.5em;
 }
 
+#logo{
+	content: url(images/spoon.jpg);
+	margin-left: 1em;
+	bottom: -25%;
+	position: inherit;
+	height: 65%;
+}
+
+<<<<<<< HEAD
 nav li{
 	float: left;
 	margin: .875em 1em;
@@ -82,3 +109,163 @@ footer{
 	vertical-align: top;
 }
 
+=======
+.trans-back{
+	width: 100%;
+	background: rgba(0, 0, 0, .2);
+	height: 15%;
+	position: relative;
+}
+
+.solid-back{
+	width: 100%;
+	background: rgb(0, 0, 0);
+	height: 25%;
+	position: relative;
+}
+
+	nav ul{
+		float: right;
+		/*height: 100%;*/
+	}
+
+	nav li{
+		float: left;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+		.vertical-center{
+			margin-top: 7.25%;
+			margin-bottom: 7.25%;
+		}
+
+	.bottom-align{
+		bottom: -15%;
+		position: inherit;
+	}
+
+	.nav-item{
+		text-decoration: none;
+		font-size: 1.25em;
+		color: #a7a4a4;
+		font-family: 'Anton', Arial, sans-serif;
+	}
+
+	.nav-item:hover{
+		color: white;
+	}
+
+		.active-circle{
+		   width: .5em;
+		   height: .5em;
+		   border-radius: 50%;
+		   background: #a7a4a4;
+		   float: left;
+		   margin: .375em .25em;
+		}
+
+/*Home Page*/
+
+#site-content-container{
+	height: 30%;
+	margin: 1em auto;
+	width: 60em;
+}
+
+	.Welcome-text{
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 1.25em;
+		clear: right;
+	}
+
+	.site-info{
+		float: left;
+		margin: 1em .5em .5em 0;
+		width: 32.5%;
+		position: relative;
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: .75em;
+		line-height: 1.25em;
+	}
+
+#footer-container{
+	clear: both;
+	height: 10%;
+	bottom: 0;
+	width: 9.75em;
+	margin: 0 auto;
+}
+
+	footer{
+		font-size: .75em;
+		position: fixed;
+		font-family: 'Roboto', Arial, sans-serif;	
+	}
+
+	.super{
+		vertical-align: top;
+		font-size: .5em;
+	}
+
+/*Contact Page*/
+
+.clear-right{
+	clear: right;
+}
+
+.margin-top-bottom{
+	margin: .5em 0;
+}
+
+/*Recipe Page*/
+
+#recipe-container{
+	height: 75%;
+	margin: 1em auto;
+	width: 60em;
+}
+
+	.recipe{
+		float: left;
+		margin: 1em .25em;
+		width: 32.5%;
+		position: relative;
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: .75em;
+		line-height: 1.25em;
+	}
+		
+		.recipe-img{
+			width: 25em;
+			height: auto;
+			margin-bottom: .5em;
+			clear: both;
+			display: block;
+			position: relative;
+		}
+
+		.recipe-title{
+			float: left;
+			font-size: 1.5em;
+			text-decoration: underline;
+		}
+			.recipe-title:hover{
+				cursor: pointer;
+				cursor: hand;
+			}
+
+		.week{
+			float: left;
+			clear: both;
+			font-size: .875em;
+			margin-top: .5em;
+			
+		}
+			.cal-icon{
+				content:url(images/calendar-icon.png);
+				margin: auto .5em auto 0;
+				display: inline;
+				vertical-align: middle;
+			}
+>>>>>>> master
