@@ -9,31 +9,31 @@ body{
 /*Nav*/
 
 .top-content{
-	background: url(images/food-1130.jpg) no-repeat center center;
+	background: url(images/main-image.jpg) no-repeat center center;
 	background-size: cover;
 	height: 60%;
 	width: 100%;
 }
 
 #logo-home{
-	content: url(images/spoon.jpg);
+	content: url(images/plan-eat-savor-logo.svg);
 	margin: 1em 0 0 1em;
 	display: inline-block;
 	position: relative;
-	height: 1.5em;
+	height: 100%;
 }
 
 #logo{
-	content: url(images/spoon.jpg);
+	content: url(images/plan-eat-savor-logo.svg);
 	margin-left: 1em;
-	bottom: -25%;
+	bottom: -10%;
 	position: inherit;
-	height: 65%;
+	height: 80%;
 }
 
 .trans-back{
 	width: 100%;
-	background: rgba(0, 0, 0, .2);
+	background: rgba(0, 0, 0, .35);
 	height: 15%;
 	position: relative;
 }
@@ -47,7 +47,6 @@ body{
 
 	nav ul{
 		float: right;
-		/*height: 100%;*/
 	}
 
 	nav li{
@@ -62,26 +61,26 @@ body{
 		}
 
 	.bottom-align{
-		bottom: -15%;
+		bottom: -1%;
 		position: inherit;
 	}
 
 	.nav-item{
 		text-decoration: none;
 		font-size: 1.25em;
-		color: #a7a4a4;
+		color: #c7bebe;
 		font-family: 'Anton', Arial, sans-serif;
 	}
 
 	.nav-item:hover{
-		color: white;
+		color: #ffffff;
 	}
 
 		.active-circle{
 		   width: .5em;
 		   height: .5em;
 		   border-radius: 50%;
-		   background: #a7a4a4;
+		   background: #c7bebe;
 		   float: left;
 		   margin: .375em .25em;
 		}
@@ -158,7 +157,7 @@ body{
 	}
 		
 		.recipe-img{
-			width: 25em;
+			width: 100%;
 			height: auto;
 			margin-bottom: .5em;
 			clear: both;
