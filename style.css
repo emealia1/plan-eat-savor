@@ -97,6 +97,7 @@ body{
 		font-family: 'Roboto', Arial, sans-serif;
 		font-size: 1.25em;
 		clear: right;
+		color: #e5e5e5;
 	}
 
 	.site-info{
@@ -107,6 +108,7 @@ body{
 		font-family: 'Roboto', Arial, sans-serif;
 		font-size: .75em;
 		line-height: 1.25em;
+		color: #e5e5e5;
 	}
 
 #footer-container{
@@ -120,7 +122,8 @@ body{
 	footer{
 		font-size: .75em;
 		position: fixed;
-		font-family: 'Roboto', Arial, sans-serif;	
+		font-family: 'Roboto', Arial, sans-serif;
+		color: #e5e5e5;	
 	}
 
 	.super{
@@ -154,6 +157,7 @@ body{
 		font-family: 'Roboto', Arial, sans-serif;
 		font-size: .75em;
 		line-height: 1.25em;
+		color: #e5e5e5;
 	}
 		
 		.recipe-img{
