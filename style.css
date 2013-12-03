@@ -19,8 +19,9 @@ body{
 	content: url(images/plan-eat-savor-logo.svg);
 	margin: 1em 0 0 1em;
 	display: inline-block;
-	position: relative;
+	/*position: relative;*/
 	height: 100%;
+	z-index: 2;
 }
 
 #logo{
@@ -47,6 +48,7 @@ body{
 
 	nav ul{
 		float: right;
+		/*vertical-align: baseline;*/
 	}
 
 	nav li{
@@ -62,7 +64,6 @@ body{
 
 	.bottom-align{
 		bottom: -1%;
-		position: inherit;
 	}
 
 	.nav-item{
@@ -103,7 +104,7 @@ body{
 	.site-info{
 		float: left;
 		margin: 1em .5em .5em 0;
-		width: 32.5%;
+		max-width: 32.5%;
 		position: relative;
 		font-family: 'Roboto', Arial, sans-serif;
 		font-size: .75em;
