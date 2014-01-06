@@ -8,6 +8,10 @@ body{
 
 /*Nav*/
 
+nav select {
+  display: none;
+}
+
 .top-content{
 	background: url(images/main-image.jpg) no-repeat center center;
 	background-size: cover;
@@ -96,16 +100,23 @@ body{
 }
 
 	.Welcome-text{
-		font-size: 1.25em;
+		font-size: 2em;
 		clear: right;
 		color: #e5e5e5;
 	}
 
+	.welcome-site-info{
+		margin: .5em .5em .5em 0;
+		/*position: absolute;*/
+		font-size: 1.25em;
+		/*line-height: 2em;*/
+		color: #e5e5e5;
+
+	}
+
 	.site-info{
-		/*float: left;*/
-		margin: 1em .5em .5em 0;
-		/*max-width: 32.5%;*/
-		position: absolute;
+		margin: .75em .5em .5em 0;
+		/*position: absolute;*/
 		font-size: .75em;
 		line-height: 1.25em;
 		color: #e5e5e5;
@@ -131,16 +142,6 @@ body{
 		vertical-align: top;
 		font-size: .5em;
 	}
-
-/*Contact Page*/
-
-.clear-right{
-	clear: right;
-}
-
-.margin-top-bottom{
-	margin: .5em 0;
-}
 
 /*Recipe Page*/
 
@@ -193,3 +194,62 @@ body{
 				display: inline;
 				vertical-align: middle;
 			}
+
+/*Contact Page*/
+
+.clear-right{
+	clear: right;
+}
+
+.margin-top-bottom{
+	margin: .5em 0;
+}
+
+.form-buttons li{
+	float: left;
+	margin: .5em .5em 0 0;
+	/*basic styles*/ 
+	width: 7em; 
+	height: 1.5em; 
+	color: #ffffff;
+	background-color: #000000; 
+	border-radius: .75em;
+	text-decoration: none;
+
+	/*gradient styles*/ 
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #2f2f2f), color-stop(5, #1e1f1f), color-stop(51, #0c0c0c), to(#000000)); 
+	background: -moz-linear-gradient(top, #2f2f2f, #1e1f1f 50%, #0c0c0c 51%, #000000); 
+
+	/*border styles*/ 
+	border-top: solid 2px #555;
+	border- bottom: solid 2px #111; 
+	-moz-box-shadow:inset 0 0 15px #000000;
+	-webkit-box-shadow:inset 0 0 15px #000000; 
+	box-shadow:inset 0 0 15px #000000;
+
+}
+.buttons { 
+	font-size: 1em;
+	text-align: center; 
+	margin: 0 auto; 
+	font-family: 'Roboto', Arial, sans-serif; 
+	} 
+
+	.buttons a{
+		text-decoration: none;
+		color: #ffffff;
+		text-shadow: 0px 0px 3px #888888;
+	}
+
+	.buttons:hover { 
+		-moz-box-shadow:inset 0 0 50px #000000; 
+		-webkit-box-shadow:inset 0 0 50px #000000;
+		box-shadow:inset 0 0 50px #000000;
+		cursor: pointer;
+		cursor: hand;
+		} 
+
+	.buttons a:hover { 
+		text-shadow: 0px 0px 3px #444444; 
+	}
+

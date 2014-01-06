@@ -5,6 +5,8 @@
 		<title>Plan.Eat.Savor.</title>
 		<link href='http://fonts.googleapis.com/css?family=Anton|Roboto' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="media.css">
+		<script type="text/javascript" src="jquery-1.10.2.js"></script>
 
 		<style>
 
@@ -30,16 +32,6 @@
 			{
 				color:#a7a4a4;
 			}
-
-			.buttons{
-				margin-top: .5em;
-			}	
-
-				.buttons:hover{
-					cursor: pointer;
-					cursor: hand;
-				}
-
 
 		</style>
 	</head>
@@ -71,13 +63,13 @@
 
             <fieldset>
 
-                <label for="name">Name</label><input type="text" name="name" value="Name">
+                <label for="name">Name </label><input type="text" name="name" value="Name">
                    
             </fieldset>
 
             <fieldset>
 
-                <label for="email">Email</label><input type="text" name="email" value="Email">
+                <label for="email">Email </label><input type="text" name="email" value="Email">
                     
             </fieldset>
 
@@ -91,11 +83,40 @@
  			<div class="clear-right">
            		<label for="Join Mailing List" class="clear-right">Join Mailing List</label><input type="checkbox" name="Join Mailing List" value="Join Mailing List" checked>
             </div>
-    
-            	<input type="submit" value="Submit" class="buttons">
-           		<input type="Reset" value="Clear" class="buttons">
-                        
+    		
+    		<section class="form-buttons">
+    			<ul>
+    			<li class="buttons"><a href="none">Submit</a></li>
+    			<li class="buttons"><a href="none">Clear</a></li>
+            	</ul>
+           	</section>
+
         </form>
+
+        <script>
+			// Create the dropdown base
+			$("<select />").appendTo("nav");
+
+			// Create default option "Go to..."
+			$("<option />", {
+			   "selected": "selected",
+			   "value"   : "",
+			   "text"    : "Go to..."
+			}).appendTo("nav select");
+
+			// Populate dropdown with menu items
+			$("nav a").each(function() {
+			 var el = $(this);
+			 $("<option />", {
+			     "value"   : el.attr("href"),
+			     "text"    : el.text()
+			 }).appendTo("nav select");
+			});
+
+			$("nav select").change(function() {
+		  	window.location = $(this).find("option:selected").val();
+			});
+		</script>
 
     </body>
 
