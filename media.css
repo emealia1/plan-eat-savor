@@ -5,7 +5,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	/*Nav*/
 	#logo-home {
-		height: 90%;
+		height: 50%;
 	}
 
 	nav ul { 
@@ -20,7 +20,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   		width: 35%; 
   	}
 	#logo {
-		height: 63%;
+		height: 30%;
 		clear: both;
 	}
 
@@ -64,7 +64,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		}
 		
 		.recipe-img{
-			width: 50%;
+			width: 30%;
 			position: absolute;
 		}
 
