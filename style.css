@@ -252,4 +252,7 @@ nav select {
 	.buttons a:hover { 
 		text-shadow: 0px 0px 3px #444444; 
 	}
-
+#form{
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 1em;
+}
