@@ -18,5 +18,17 @@
 		<?php echo $phone?>
 		</div>
 
+
+		<?php
+			$to = "emealia.hollis@ksuwdc.com";
+			$subject = "the subject";
+			$message = "hello";
+
+			mail($to, $subject, $message);
+
+			$fh = fopen("log.txt", "a");
+			fwrite($fh, "Errors are here")\n-------------------------------------------\n;
+			fclose($fh);
+
 	</body>
 </html>
