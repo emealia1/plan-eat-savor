@@ -25,10 +25,13 @@
 			$message = "hello";
 
 			mail($to, $subject, $message);
+			?>
 
+			<?php
 			$fh = fopen("log.txt", "a");
-			fwrite($fh, "Errors are here")\n-------------------------------------------\n;
+			fwrite($fh, "Errors are here\n-------------------------------------------\n");
 			fclose($fh);
+			?>
 
 	</body>
 </html>
